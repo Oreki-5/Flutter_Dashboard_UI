@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mypcot_dashboard/color_consts.dart';
 import 'package:mypcot_dashboard/pages/dashboard_page.dart';
+// import 'package:mypcot_dashboard/pages/dashboard_page.dart';
+// import 'package:mypcot_dashboard/pages/dashboard_page_test.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,9 +32,9 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: .fromSeed(seedColor: const Color.fromARGB(255, 170, 170, 171)),
+        colorScheme: .fromSeed(seedColor: primaryBlue),
       ),
-      home: const DashboardPage(),
+      home: DashboardPage(),
     );
   }
 }
