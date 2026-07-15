@@ -280,8 +280,8 @@ class DashboardPage extends StatelessWidget {
             child: CalendarPicker(
               selectionMode: CalendarSelectionMode.single,
               config: CalendarConfig(
-                itemWidth: 50,
-                itemSpacing: 0,
+                itemWidth: 47,
+                itemSpacing: 1.5,
                 minDate: DateTime(2020, 1, 1, 0, 0, 0, 0, 0),
                 startDate: DateTime.now().subtract(Duration(days: 3)),
                 locale: 'en_US',
@@ -290,7 +290,6 @@ class DashboardPage extends StatelessWidget {
                 showMonthHeaders: false,
                 enableSwipeNavigation: false,
               ),
-              // initialSelection:CalendarSelection(selectedDates: [DateTime.now().subtract(Duration(days: 4))]),
               onDateSelected: (date) {},
               style: CalendarStyle(
                 dateTextStyle: TextStyle(
